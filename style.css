@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+    color: #fff;
+    background-color: #111;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background-color: #f7f7f7;
+    font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}#nav #nav-part1{
+    /* background-color: rebeccapurple;_ */
+    height: 83px;
+    overflow: hidden;
+}
+#nav svg{
+     display: block;
+}
+#nav #nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#nav-part2 #links a{
+    text-decoration: none;
+    font-size: 13px ;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 20px;
+    color: #111;
+    font-family: sans-serif;
+    /* gap: 20px; */
+}
+#nav-part2 #links a:hover{
+    cursor: pointer;
+    color: rgb(213, 213, 213);
+    border-bottom: 1px solid rgb(16, 16, 16)
+
+}
+#nav-part2 .icons{
+    margin-right: 50px;
+    font-size: 20px;
+
+}
+#nav-part2 .icons i{
+    margin: 0 25px;
+}
+#nav-part2 .icons i:hover{
+    cursor: pointer;
+}
+#cursor{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(214, 214, 214);
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transform: scale(0);
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* padding-top: 19vh; */
+    /* padding: 0vw 1vw; */
+    margin-top: 12.5vw;
+}
+#page1 h1{
+    font-size: 16vw;
+    text-transform: uppercase;
+    letter-spacing: -10px;
+    line-height: 14vw;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1vw 1vw;
+}
+
+#video-container{
+    height: 100vh;
+    width: 98%;
+    /* background-color: gray; */
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3vw 2.5vw;
+    font-size: 1.4vw;
+    background-color: #111;
+    color: #fff;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    scale: 0;
+    opacity: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#video-container img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#page2{
+    height: 100vh;
+    width: 98%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 1vw;
+}
+#page2 .elem{
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#page2 .elem .dets{
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    background-color: rgb(255 253 204);
+    z-index: 9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#page2 .elem .dets:hover{
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+#page3{
+    height: 255vh;
+    width: 100%;
+    /* background-color: rgb(230, 230, 230); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.child{
+    height: 120vh;
+    width: 40vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;border: 2px solid black; */
+    align-items: center;
+    flex-direction: column;
+    margin: 2vw 1vw;
+}
+.child img{
+    height: 75%;
+    width: 100%; 
+    object-fit: cover;
+}
+.info{
+    margin-top: 5vw;
+    text-align: center;
+}
+
+
+#page4{
+    height: 140vh;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25vw;
+    border-bottom: 1px solid #111;
+
+}
+.content h3{
+    font-size: 3vw ;
+   padding-left: 1.4vw;
+   margin-bottom: 2vw;
+
+}
+.para p{
+    font-size: 1.2vw ;
+    line-height: 2vw;
+    padding-bottom: 1vw;
+    /* padding: 0 2vw; */
+    padding-left: 2vw;
+    padding-right: 8vw;
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2.6vw;
+
+}
+.content span p{
+    margin-left: 2vw;
+}
+.content span  a{
+    color: rgb(22, 22, 22);
+    font-size: 1vw;
+    letter-spacing: 2px;
+    /* margin-bottom: 1px; */
+    padding: 2vw 0;
+}
+.linebottom{
+    height: 5px;
+}
+.part2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.part2 .picture{
+    padding: 0 1vw;
+}
+#page6{
+     height: 150vh;
+     width: 100%;
+     /* background: linear-gradient(to right,rgb(18, 18, 255) ,rgb(255, 23, 89)); */
+     /* background: linear-gradient(to right,red 10%,yellow 50%,blue 90%); */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.head{
+    height: 120vh;
+    border-radius: 5vw;
+    background-color: #f1f1f1;
+    /* border: 1px solid gainsboro; */
+    padding: 2vw 5vw;
+    box-shadow: 20px 20px 60px #00000041 , inset -20px -20px 60px #fff;
+}
+
+#page6 h1{
+    font-size: 6vw;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(169deg, #000000, transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sendbtn{
+    padding: 2vw 6vw;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 11vw;
+    border-radius: 5vw;
+    border: none;
+    background:  linear-gradient(169deg, #000000, transparent) ;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+#sendbtn:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.para2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    transition: transform 0.3s ease-in-out;
+}
+.para2 p{
+    font-size: 1.6vw;
+
+}
+.para2:hover{
+    color: rgba(161, 161, 161, 0.923);
+    transform: scale(1.1);
+}
+#page7{
+    height: 140vh;
+    width: 100%;
+      /* background: linear-gradient(to right,red 10%,yellow 50%,blue 90%); */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12vw;
+}
+#part1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+    padding: 2vw 3vw;
+}
+#part1 h5{
+    font-size: 1.3vw;
+    opacity: 0.7;
+    margin-bottom: 2vw;
+    white-space: nowrap;
+    display: flex;
+}
+#part1 a{
+    color: #111;
+    text-decoration: none;
+    gap: 1.5vw;
+
+}
+#part1 a:hover{
+   opacity: 0.8;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.lastlogo {
+    font-size: 8vw;
+    scale: 3;
+    height: 10vw;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8vw;
+    margin-bottom: 7vw;
+
+}
+#part2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: -2vw;
+    margin-bottom: 20vw;
+       
+}
+#part2 .terms h4{
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-bottom: 1.6vw;
+}
+#part2 #lagepara p{
+    font-size: 1.2vw;
+    opacity: 0.7;
+    font-weight: 500;
+}
+#part3{
+    padding: 2vw 3vw;
+    text-align: center;
+}
+#part3 h5{
+    font-size: 1.3vw;
+    opacity: 0.7;
+    margin-bottom: 2vw;
+    white-space: nowrap;
+}
+#part3 a{
+    color: #111;
+    text-decoration: none;
+    gap: 1.5vw;
+    white-space: nowrap;
+
+}
+#part3 a:hover{
+   opacity: 0.8;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+@media (max-width:600px){
+    
+    #nav{
+        height: 100px;
+        width: 100%;
+        /* background-color: aquamarine; */
+        padding: 15px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }#nav #nav-part1{
+        /* background-color: rebeccapurple;_ */
+        height: 83px;
+        overflow: hidden;
+    }
+    #nav svg{
+         display: block;
+         /* height: 77px; */
+    }
+    #nav #twogoodlogo{
+        height: 50px;
+    }
+    
+    #links{
+        display: none;
+        padding: 10px;
+    }
+    
+   
+    #nav-part2 .icons{
+        margin-right: 27px;
+        font-size: 25px;
+        padding: 13px 0px;
+    }
+    
+    #page1{
+        min-height: 50vh;
+        width: 100%;
+        position: relative;
+        padding-top: 19vh;
+        /* padding: 0vw 1vw; */
+        padding-left: 1vw;
+    }
+    
+    #page1 h1{
+        font-size: 17vw;
+        letter-spacing: -3px;
+        /* line-height: 14vw; */
+        
+    }
+    #video-container{
+        height: 30vh;
+        width: 99%;
+        margin-top: 3vw;
+    }
+    #video-container #play{
+        padding: 6vw 5.5vw;
+        font-size: 4.4vw; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        scale: 1;
+        opacity: 1;
+    }
+    #page2{
+        height: 250vh;
+        width: 98%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5vw 2vw;
+        flex-direction: column;
+    }
+    #page2 .elem{
+        height: 100%;
+        width: 98%;
+        /* background-color: red; */
+        padding: 2vw 1vw;
+    
+    }
+    #page2 .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        scale: 1;
+    }
+    #page3{
+        height: 350vh;
+        width: 100%;
+        /* background-color: rgb(230, 230, 230); */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .child{
+        height: 70vh;
+        width: 90vw;
+        /* background-color: red; */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        /* align-items: center;border: 2px solid black; */
+        align-items: center;
+    }
+    .child img{
+        height: 100%;
+        width: 100%;
+    }
+    
+#page4{
+    flex-direction: column;
+    height: 190vh;
+}
+.part2{
+    flex-direction: column;
+}
+.content h3 {
+    font-size: 10vw;
+    padding-left: 18.5vw;
+    margin-bottom: 6vw;
+}
+.para p {
+    font-size: 5.2vw;
+    line-height: 5vw;
+    padding-left: 8vw;
+    padding-right: 10vw;
+    display: flex;
+    margin-bottom: 2.6vw;
+    opacity: 0.8;
+}
+.content{
+    height: 50vh;
+}
+.content span p {
+    margin-left: 8vw;
+    /* font-size: 1vw; */
+    margin-top: 10vw;
+}
+.content span a {
+    font-size: 5vw;
+}
+#part2 .picture{
+     
+        height: 65vh;
+        width: 40vh;
+    
+}
+#part2 .picture img{
+    
+        padding: 3vw 2vw;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    
+}
+#page6{
+    height: 70vh;
+}
+#page6 .head{
+    height: 50vh;
+}
+.para2 p{
+    font-size: 3.5vw;
+    opacity: 0.8;
+}
+#sendbtn {
+    padding: 4vw 13vw;
+}
+.btn{
+    margin-top: 18vw;
+}
+#page6 h1{
+    font-size: 7vw;
+    margin-top: 15vw;
+}
+#page7{
+    flex-direction: column;
+    gap: 0;
+    height: 150vh;
+}
+#page7 #part1 h5{
+    font-size: 6.3vw;
+
+}
+#page7 #part1 a{
+    font-size: 5vw;
+}
+#part2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: -2vw;
+       
+}
+.lastlogo{
+    margin-left: 43vw;
+    margin-bottom: 20vw;
+}
+#part2 .terms h4{
+    font-size: 6.4vw;
+    font-weight: 700;
+    margin-bottom: 2.6vw;
+}
+#part2 #lagepara {
+    font-size: 5vw;
+    padding: 2vw;
+}
+#part3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vw;
+    
+}
+#part3 h5{
+    font-size: 6.3vw;
+    opacity: 0.7;
+}
+#part3 a{
+    font-size: 5vw;
+    gap: 2vw;
+    white-space: nowrap;
+
+}
+#part3 a:hover{
+   opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+
+}
